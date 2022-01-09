@@ -52,8 +52,8 @@ function App() {
     <div className="App">
       <Header countCart={cartItems.length}/>
       <div className=' d-flex my-3 px-3'>
-        <Display onAdd={onAdd} items={items}/>
         <Cart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
+        <Display onAdd={onAdd} items={items}/>
       </div>
     </div>
   

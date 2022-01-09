@@ -4,6 +4,8 @@ import React from 'react'
 const Header = (props) => {
   const {countCart} = props
 
+  
+
   return (
     <header className='card d-flex flex-row justify-content-between px-5 align-items-center ' >
       <div>
@@ -14,7 +16,7 @@ const Header = (props) => {
 
       <div>
         <a  className='px-2 text-decoration-none' href="#/cart"> 
-        <i class="fas fa-shopping-cart"></i>{''}
+        <i  class="fas fa-shopping-cart"></i>{''}
         {countCart? (
           <button className='ms-2 badge rounded-circle'>{countCart}</button>
         ): ('')}
